@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_marginTop="30dp"
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/avatar"
+            android:scaleType="centerCrop" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장우람"
+            android:fontFamily="@font/notosanskr_bold"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:includeFontPadding="false"
+            android:paddingTop="8dp"/>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+>
+                <TextView
+                android:id="@+id/view_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                android:text="프로필 보기"
+                android:fontFamily="@font/notosanskr_semibold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:includeFontPadding="false" />
+
+                <View
+                    android:layout_width="87dp"
+                    android:layout_height="1dp"
+                    android:background="@color/edittext_stroke_color" />
+            </LinearLayout>
+
+        <!-- User Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:paddingTop="32dp">
+
+            <!-- Personal Information -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="계정 설정"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:includeFontPadding="false"/>
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="개인 정보 수정"
+                        android:fontFamily="@font/notosanskr_semibold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edittext_stroke_color" />
+
+            <!-- Translation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="결제 수단 변경"
+                android:fontFamily="@font/notosanskr_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edittext_stroke_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="언어 설정"
+                android:fontFamily="@font/notosanskr_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edittext_stroke_color" />
+            <!-- Privacy and Sharing -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="알림 설정"
+                android:fontFamily="@font/notosanskr_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <!-- Travel for Work -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/edittext_stroke_color" />
+
+            <TextView
+                android:id="@+id/profilefragment_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="로그 아웃"
+                android:fontFamily="@font/notosanskr_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
